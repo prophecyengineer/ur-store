@@ -1,0 +1,48 @@
+import React from 'react';
+import SearchIcon from 'assets/icons/search-icon';
+import { useSearch } from 'contexts/search/use-search';
+import {
+  SearchOutlineBase,
+  SearchOutlineIconWrapper,
+  SearchOutlineInput,
+} from 'components/utils/theme';
+
+type SearchOutlineProps = { className?: string; id?: string };
+
+const SearchOutline: React.FC<SearchOutlineProps> = ({
+  className,
+  ...props
+}) => {
+  const { searchTerm, setSearchTerm } = useSearch();
+  const onSearch = (e) => {
+    e.preventDefault();
+    const { value } = e.currentTarget;
+    setSearchTerm(value);
+  };
+  const onSubmit = (e) => e.preventDefault();
+
+  const classNames = SearchOutlineBase + ' ' + className;
+
+  return (
+    <form noValidate role="search" className={classNames} onSubmit={onSubmit}>
+      <span className={SearchOutlineIconWrapper}>
+        <SearchIcon color="#999999" />
+      </span>
+      <label htmlFor={props.id || 'search-outline'} className="sr-only">
+        {props.id || 'search-outline'}
+      </label>
+      <input
+        type="search"
+        placeholder="Search your medicine here"
+        className={SearchOutlineInput}
+        value={searchTerm}
+        onChange={onSearch}
+        id={props.id || 'search-outline'}
+        autoComplete="off"
+        {...props}
+      />
+    </form>
+  );
+};
+
+export default SearchOutline;
