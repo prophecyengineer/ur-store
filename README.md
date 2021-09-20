@@ -1,6 +1,6 @@
 # Project Name: Medsy
 
-## About
+## About ME
 
 This project includes Google Spreadsheet and serverless API routes. On visiting, the app calls get products method, which stores the product's info . On order, the app calls /api/order to place a order on google spreadsheet.
 
