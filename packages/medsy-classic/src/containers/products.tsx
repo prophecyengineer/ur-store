@@ -11,9 +11,11 @@ const Products = React.forwardRef(
     const { dispatch } = useContext(DrawerContext);
 
     const { searchTerm } = useSearch();
-    const searchableItems = useSearchable(items, searchTerm, (item) => [
-      item.name,
-    ]);
+    const searchableItems = useSearchable(
+      items,
+      searchTerm,
+      (item: { name: any }) => [item.name]
+    );
 
     const { addItem, removeItem, getItem } = useCart();
 

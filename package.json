@@ -33,5 +33,12 @@
     "*.{js,ts,tsx,jsx,md,css}": [
       "prettier --trailing-comma es5 --single-quote --write"
     ]
+  },
+  "dependencies": {
+    "@vercel/next": "^2.7.9",
+    "@vercel/node": "^1.12.1",
+    "@vercel/static-build": "^0.18.0",
+    "next-images": "^1.8.1",
+    "vercel": "^23.1.2"
   }
 }
