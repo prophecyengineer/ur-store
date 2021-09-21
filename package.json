@@ -9,17 +9,13 @@
   "scripts": {
     "clean": "yarn workspaces run rimraf \"{.next,dist,build,node_modules}\" && rimraf node_modules",
     "dev:medsy-modern": "yarn workspace @medsy/modern dev",
-    "dev:medsy-classic": "yarn workspace @medsy/classic dev",
-    "dev:medsy-minimal": "yarn workspace @medsy/minimal dev",
+   
     "build:medsy-modern": "yarn workspace @medsy/modern build",
-    "build:medsy-classic": "yarn workspace @medsy/classic build",
-    "build:medsy-minimal": "yarn workspace @medsy/minimal build",
+    
     "serve:medsy-modern": "yarn workspace @medsy/modern start",
-    "serve:medsy-classic": "yarn workspace @medsy/classic start",
-    "serve:medsy-minimal": "yarn workspace @medsy/minimal start",
+    
     "deploy-vercel:medsy-modern": "cd packages/medsy-modern && vercel --prod",
-    "deploy-vercel:medsy-classic": "cd packages/medsy-classic && vercel --prod",
-    "deploy-vercel:medsy-minimal": "cd packages/medsy-minimal && vercel --prod",
+  
     "prepare": "husky install"
   },
   "devDependencies": {
