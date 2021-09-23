@@ -1,9 +1,9 @@
 import React from 'react';
 import Carousel from 'components/carousel/carousel';
-import CouponImg from 'assets/image/coupon-card.png';
-import OrderImg from 'assets/image/custom-order.png';
-import DeliveryImg from 'assets/image/fast-delivery.png';
-import FemaleCareImg from 'assets/image/female-care.png';
+import CouponImg from 'https://media.giphy.com/media/IwjBgHzWf1ziU3m0Pq/giphy.gif';
+import OrderImg from 'https://media.giphy.com/media/ho0xXatV7b3Fo1ZRXN/giphy.gif';
+import DeliveryImg from 'https://media.giphy.com/media/FlcekXZFek8XHrRU46/giphy.gif';
+import FemaleCareImg from 'https://media.giphy.com/media/EdealKz0LxKTGs0hYA/giphy.gif';
 
 const data = [
   {
