@@ -283,9 +283,9 @@ cd medsy
 
 step-2: run deployment command like:
 
-```bash
+````bash
 deploy-vercel:medsy-classic
-```
+```c
 
 which is promoted for some information fill your information or just stay with the defaults as
 
@@ -301,7 +301,7 @@ Auto-detected project settings (Next.js):
 - Output Directory: Next.js default
 - Development Command: next dev --port $PORT
 ? Want to override the settings? [y/N] N
-```
+````
 
 ## IMPORTANT:
 
