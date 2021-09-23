@@ -9,13 +9,9 @@
   "scripts": {
     "clean": "yarn workspaces run rimraf \"{.next,dist,build,node_modules}\" && rimraf node_modules",
     "dev:medsy-modern": "yarn workspace @medsy/modern dev",
-   
     "build:medsy-modern": "yarn workspace @medsy/modern build",
-    
     "serve:medsy-modern": "yarn workspace @medsy/modern start",
-    
     "deploy-vercel:medsy-modern": "cd packages/medsy-modern && vercel --prod",
-  
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -32,10 +28,21 @@
     ]
   },
   "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-syntax-jsx": "^7.14.5",
+    "@react-three/fiber": "^7.0.7",
     "@vercel/next": "^2.7.9",
     "@vercel/node": "^1.12.1",
     "@vercel/static-build": "^0.18.0",
+    "konva": "^8.1.4",
     "next-images": "^1.8.1",
-    "vercel": "^23.1.2"
+    "react": "^17.0.2",
+    "react-konva": "^17.0.2-5",
+    "react-native": "^0.65.1",
+    "react-zdog": "^1.0.11",
+    "three": "^0.132.2",
+    "url-loader": "^4.1.1",
+    "vercel": "^23.1.2",
+    "zdog": "^1.1.2"
   }
 }
