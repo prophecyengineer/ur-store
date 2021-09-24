@@ -1,56 +1,45 @@
 {
-  "name": "medsy",
+  "name": "@medsy/modern",
   "version": "1.4.0",
   "private": true,
-  "author": "RedQ, Inc.",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
-    "clean": "yarn workspaces run rimraf \"{.next,dist,build,node_modules}\" && rimraf node_modules",
-    "dev:medsy-modern": "yarn workspace @medsy/modern dev",
-    "build:medsy-modern": "yarn workspace @medsy/modern build",
-    "serve:medsy-modern": "yarn workspace @medsy/modern start",
-    "deploy-vercel:medsy-modern": "cd packages/medsy-modern && vercel --prod",
-    "prepare": "husky install"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3",
-    "eslint": "^7.32.0",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2",
-    "rimraf": "^3.0.2"
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx,jsx,md,css}": [
-      "prettier --trailing-comma es5 --single-quote --write"
-    ]
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/plugin-syntax-jsx": "^7.14.5",
-    "@react-three/fiber": "^7.0.7",
-    "@vercel/next": "^2.7.9",
-    "@vercel/node": "^1.12.1",
-    "@vercel/static-build": "^0.18.0",
-    "airtable": "^0.11.1",
-    "konva": "^8.1.4",
-    "next": "^11.1.2",
-    "next-images": "^1.8.1",
+    "google-spreadsheet": "^3.1.15",
+    "localforage": "^1.10.0",
+    "mailgen": "^2.0.15",
+    "mailgun-js": "^0.22.0",
+    "next": "^11.1.0",
+    "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
+    "next-pwa": "^5.3.1",
+    "nodemailer": "^6.6.3",
+    "overlayscrollbars": "^1.13.1",
+    "overlayscrollbars-react": "^0.2.3",
+    "rc-collapse": "^3.1.1",
     "react": "^17.0.2",
-    "react-konva": "^17.0.2-5",
-    "react-native": "^0.65.1",
-    "react-zdog": "^1.0.11",
-    "three": "^0.132.2",
-    "url-loader": "^4.1.1",
-    "vercel": "^23.1.2",
-    "web-vitals": "^2.1.0",
-    "webpack": "^5.53.0",
-    "zdog": "^1.1.2"
+    "react-dom": "^17.0.2",
+    "react-multi-carousel": "^2.6.3",
+    "react-number-format": "^4.7.3",
+    "react-scroll": "^1.8.3",
+    "react-spring": "^9.2.4",
+    "react-stickynode": "^4.0.0",
+    "swiper": "^7.0.4",
+    "typeface-open-sans": "^1.1.13"
   },
-  "main": "index.js",
-  "repository": "https://github.com/newtcandoit/ur-store",
-  "license": "MIT"
+  "devDependencies": {
+    "@types/react": "^17.0.20",
+    "autoprefixer": "^10.3.4",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^9.0.0",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.14",
+    "typescript": "^4.4.2"
+  }
 }

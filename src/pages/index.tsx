@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
 import Layout from 'containers/layout/layout';
-import HeroBlock from 'containers/hero-block';
+// import HeroBlock from 'containers/hero-block';
 import Products from 'containers/products';
 import CallToAction from 'containers/call-to-action';
-import HowItWorks from 'containers/how-it-works';
+// import HowItWorks from 'containers/how-it-works';
 import { useRefScroll } from 'helpers/use-ref-scroll';
 import { useSearch } from 'contexts/search/use-search';
 import { getProducts } from 'helpers/get-products';
@@ -35,11 +35,12 @@ export default function Home({ products, categories }) {
         <title>Medsy</title>
       </Head>
 
-      <HeroBlock />
-      <HowItWorks />
+      {/* <HeroBlock /> */}
+      {/* <HowItWorks /> */}
+      <CallToAction />
+
       <Categories data={categories} ref={elRef} />
       <Products items={products} />
-      <CallToAction />
     </Layout>
   );
 }
