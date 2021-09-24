@@ -39,6 +39,7 @@
     "@types/react": "^17.0.20",
     "autoprefixer": "^10.3.4",
     "babel-plugin-inline-react-svg": "^2.0.1",
+    "eslint": "^7.32.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^9.0.0",
