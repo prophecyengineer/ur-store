@@ -1,5 +1,5 @@
 {
-  "name": "@medsy/modern",
+  "name": "ur-store",
   "version": "1.4.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "google-spreadsheet": "^3.1.15",
+    "lint-staged": "^11.1.2",
     "localforage": "^1.10.0",
     "mailgen": "^2.0.15",
     "mailgun-js": "^0.22.0",
@@ -35,11 +36,16 @@
     "@types/react": "^17.0.20",
     "autoprefixer": "^10.3.4",
     "babel-plugin-inline-react-svg": "^2.0.1",
+    "eslint": "^7.32.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^9.0.0",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.14",
     "typescript": "^4.4.2"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/newtcandoit/ur-store",
+  "author": "Lottie <newtcandoit@gmail.com>",
+  "license": "MIT"
 }
